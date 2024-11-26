@@ -1,4 +1,4 @@
-/* General */
+/*General*/
 * {
     margin: 0;
     padding: 0;
@@ -55,7 +55,7 @@ nav {
     background: #272424;
     display: flex;
     justify-content: center;
-    padding: 0.7rem 0;
+    padding: 0.7rem 0; 
 }
 nav a {
     color: white;
@@ -83,7 +83,6 @@ section {
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-
 .progra{
     background-color: #535857;
     color:  white;
@@ -101,7 +100,7 @@ section {
     margin-bottom: 1rem;
 }
 
-/* Para las tarjetas de tutoriales*/
+/* Para las tarjetas de tutoriales */
 .tutorial {
     display: flex;
     align-items: center;
@@ -179,42 +178,10 @@ a:hover {
     text-decoration: none;
 }
 
-#csharp .section-link {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 1; /* Asegura que el enlace esté encima de otros elementos */
-    display: block;
-    text-decoration: none;
+/* Asegura que el cursor cambie al pasar por encima */
+#Python:hover {
+    transform: scale(1.05); /* Efecto de zoom */
 }
-
-
-#css_page .section-link {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 1; /* Asegura que el enlace esté encima de otros elementos */
-    display: block;
-    text-decoration: none;
-}
-
-.section-link {
-    display: block;
-    text-decoration: none;
-    color: inherit;
-}
-
-.section-link p {
-    font-weight: normal;
-}
-
-
-
-
 
 
 /* Estilos responsivos para pantallas pequeñas (móviles y tabletas) */
