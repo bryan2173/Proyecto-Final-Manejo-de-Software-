@@ -5,6 +5,17 @@
     box-sizing: border-box;
 }
 
+/* Efecto de zoom para toda la sección */
+section.ajuste {
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+section.ajuste:hover {
+    cursor: pointer; /* Cambia el cursor a una mano */
+    background-color: #c9d7e2;
+    transform: scale(1.05);
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #ededf1;
@@ -133,7 +144,7 @@ footer {
 
 /* Estilos específicos para la sección "progra" */
 .progra {
-    background: linear-gradient(135deg, #82e6b4, #a8f0ab); /* Fondo degradado */
+    background: linear-gradient(135deg, #86dbb1, #93bec5); /* Fondo degradado */
     color: #fff; 
     padding: 2rem; /* Espaciado interno */
     margin: 2rem 0; /* Separación con otras secciones */
