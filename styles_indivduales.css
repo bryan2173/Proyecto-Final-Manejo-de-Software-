@@ -175,7 +175,7 @@ footer {
 }
 
 
-/* Diseño responsivo */
+/* Diseño responsivo para dispositivos pequeños (móviles) */
 @media screen and (max-width: 768px) {
     header h1 {
         font-size: 1.5rem;
@@ -191,20 +191,52 @@ footer {
     }
 
     section {
+        flex-direction: column;
         text-align: center;
     }
 
-    .tutorial img {
-        width: 120px;
-        height: 120px;
+    section img {
+        max-width: 100%;
+        margin-bottom: 10px;
     }
 
-    .tutorial h2 {
-        font-size: 1.5rem;
+    section div {
+        margin-left: 0;
     }
 
-    .tutorial p {
+    section h2 {
+        font-size: 1.2rem;
+    }
+
+    section p {
         font-size: 0.9rem;
     }
 }
 
+/* Diseño para tabletas (pantallas medianas) */
+@media screen and (max-width: 1024px) {
+    nav {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    section {
+        flex-direction: row;
+    }
+
+    section img {
+        max-width: 150px;
+    }
+
+    section div {
+        margin-left: 15px;
+    }
+
+    section h2 {
+        font-size: 1.4rem;
+    }
+
+    section p {
+        font-size: 1rem;
+    }
+}
